@@ -1,0 +1,29 @@
+{
+  "name": "crawlerv3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "lala-crawler": "./dist/main.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node --loader ts-node/esm src/main.ts",
+    "dev": "ts-node --esm src/main.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@types/yargs": "^17.0.33",
+    "axios": "^1.11.0",
+    "yargs": "^18.0.0"
+  }
+}
